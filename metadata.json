@@ -1,0 +1,6 @@
+{
+  "name": "Tamim Ahmed Social Hub",
+  "description": "A beautifully designed, responsive, and minimalist personal social hub for Tamim Ahmed featuring interactive link shortcuts, automated credential copy handlers, and an premium glassmorphic aesthetic.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

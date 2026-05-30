@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Outfit", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --animate-pulse-slow: pulse 8s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  --animate-float: float 8s ease-in-out infinite;
+  --animate-float-delayed: float-delayed 11s ease-in-out infinite;
+  --animate-glow: glow 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-18px) rotate(2deg); }
+}
+
+@keyframes float-delayed {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(18px) rotate(-2deg); }
+}
+
+@keyframes glow {
+  0%, 100% { filter: drop-shadow(0 0 15px rgba(56, 189, 248, 0.2)); }
+  50% { filter: drop-shadow(0 0 30px rgba(56, 189, 248, 0.5)); }
+}
+
+/* Custom modern glassmorphic background styles */
+.glass-panel {
+  background: rgba(15, 23, 42, 0.35);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.glass-panel-hover:hover {
+  background: rgba(15, 23, 42, 0.55);
+  border-color: rgba(56, 189, 248, 0.35);
+  box-shadow: 0 0 30px rgba(56, 189, 248, 0.12);
+}
+
+/* Hide scrollbar for clean presentation */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(56, 189, 248, 0.15);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(56, 189, 248, 0.35);
+}
